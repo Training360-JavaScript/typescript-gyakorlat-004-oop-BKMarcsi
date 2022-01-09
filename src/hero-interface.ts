@@ -17,7 +17,12 @@ export interface IHero {
  * @var {number} age
  * @var {number} health 
  */
-export interface IHuman {}
+
+export interface IHuman {
+    sex: string;
+    age: number;
+    health: number;
+}
 
 /**
  * Hozz létre és exportálj ki egy új interfészt!
@@ -28,5 +33,10 @@ export interface IHuman {}
  * @var {number} wheels
  * @var {string} clan 
  */
-export interface ITransformer {}
+
+export interface ITransformer extends IHero{
+    wings: number;
+    wheels: number;
+    clan: string;
+}
 
